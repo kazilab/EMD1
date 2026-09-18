@@ -1,0 +1,4 @@
+# Optional hierarchical decay/reader sub-model in fit/bayes.py.
+-r requirements.txt
+jax>=0.4
+numpyro>=0.15

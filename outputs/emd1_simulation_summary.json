@@ -1,0 +1,939 @@
+{
+  "schema_version": 2,
+  "time_interpretation": "nominal model days; illustrative, not an experimentally calibrated protocol",
+  "scientific_evidence_audit": {
+    "interpretation": "These discrepancies are separate from nominal encoding checks. Perturbation strength and experimental context are not matched; no joint likelihood is claimed.",
+    "antioxidant_fto_decay": {
+      "model_ftoi_over_arsenic": 0.8667203935719792,
+      "observed_median_siFTO_over_siControl": 1.5428741203561995,
+      "direction_agrees": false,
+      "status": "pooled comparison retained for continuity only; it mixes two branches and three exposure stages. Read antioxidant_branch_reconciliation instead, which resolves both and finds no detectable effect at the matched stage.",
+      "superseded_by": "antioxidant_branch_reconciliation"
+    },
+    "a3b_fto_rescue": {
+      "model_ftoi_over_arsenic": 0.6208682512932624,
+      "digitised_FB23_2_over_DMSO": 0.12,
+      "model_minimum_over_nominal_arsenic_with_fixed_synthesis": 0.27853877434108676,
+      "status": "unresolved magnitude and protocol mismatch; inhibitor strength alone is insufficient at nominal gains"
+    },
+    "time_scale": {
+      "unit": "nominal model day; not physiologically calibrated",
+      "model_arsenic_antioxidant_half_life_nominal_hours": 109.19516574185855,
+      "observed_median_chase_control_half_life_hours": 6.72106759960163,
+      "status": "different contexts; not a matched-condition quantitative validation"
+    },
+    "mutation_interpretation": "Relative cumulative fixation index for a representative modeled cell/lineage; not calibrated mutations per genome, a live-population average, or a clonal-selection model.",
+    "repair_interpretation": "No functional aggregate-repair measurement; DDB2 methylation background percentiles are neither repair capacity measurements nor equivalence tests.",
+    "quantitatively_validated": false,
+    "antioxidant_branch_reconciliation": {
+      "interpretation": "Chase decay-constant ratios vs siControl, split by exposure stage and by the branch assignment the source paper makes. Replaces a pooled median over six genes and three stages, which mixed both branches and three stages of transformation.",
+      "pooled_median_all_genes_all_stages": 1.5428741203561995,
+      "pooled_is_misleading_because": "PRDX5 is on the eraser branch and inverts under writer knockdown; and the eraser effect on the writer branch appears only at the latest stage.",
+      "model_horizon_days": 45.0,
+      "nearest_chase_stage": "8w",
+      "model_ftoi_over_arsenic": 0.8667203935719792,
+      "by_stage": {
+        "8w": {
+          "writer_branch_median_siFTO": 1.1852765792399127,
+          "writer_branch_mean_log_ratio": 0.022836211693463625,
+          "writer_branch_p_vs_no_effect": 0.9312066479322908,
+          "writer_branch_n_faster": 4,
+          "writer_branch_n": 5,
+          "eraser_branch_siFTO": {
+            "PRDX5": 2.308510429608884
+          },
+          "writer_branch_median_siMETTL3": 2.1841472207838404
+        },
+        "22w": {
+          "writer_branch_median_siFTO": 1.5182083165922862,
+          "writer_branch_mean_log_ratio": 0.0049636502146084725,
+          "writer_branch_p_vs_no_effect": 0.9856568507766041,
+          "writer_branch_n_faster": 3,
+          "writer_branch_n": 5,
+          "eraser_branch_siFTO": {
+            "PRDX5": 3.593852545012749
+          },
+          "writer_branch_median_siMETTL3": 2.3338065562884647
+        },
+        "22+12w": {
+          "writer_branch_median_siFTO": 2.246781085723292,
+          "writer_branch_mean_log_ratio": 0.7445467388018607,
+          "writer_branch_p_vs_no_effect": 0.0007817111608049706,
+          "writer_branch_n_faster": 5,
+          "writer_branch_n": 5,
+          "eraser_branch_siFTO": {
+            "PRDX5": 2.148908082906877
+          },
+          "writer_branch_median_siMETTL3": 2.1870174886645395
+        }
+      },
+      "matched_stage_contradicts_model": false,
+      "status": "no detectable eraser effect on the writer branch at the stage nearest the model horizon; the disagreement is confined to the latest stage and is a stage-dependence finding, not a refutation of the coupling sign"
+    }
+  },
+  "population_diagnostics": {
+    "control": {
+      "population_fold_vs_start": 4.052155737442633,
+      "net_population_loss": false,
+      "division_rate_at_endpoint": 0.03730000000000012,
+      "death_rate_at_endpoint": 0.006205577325390461,
+      "net_growth_rate_at_endpoint": 0.031094422674609656,
+      "integrated_division_hazard": 1.6784999999996235,
+      "integrated_death_hazard": 0.2792509796426111
+    },
+    "as": {
+      "population_fold_vs_start": 5.99284976987,
+      "net_population_loss": false,
+      "division_rate_at_endpoint": 0.05624417701530244,
+      "death_rate_at_endpoint": 0.009942289226404713,
+      "net_growth_rate_at_endpoint": 0.046301887788897725,
+      "integrated_division_hazard": 2.29491895104089,
+      "integrated_death_hazard": 0.5043505425083483
+    },
+    "as_ftoi": {
+      "population_fold_vs_start": 2.666949719404256,
+      "net_population_loss": false,
+      "division_rate_at_endpoint": 0.033052540927071106,
+      "death_rate_at_endpoint": 0.00719100975753788,
+      "net_growth_rate_at_endpoint": 0.025861531169533228,
+      "integrated_division_hazard": 1.3801426381903013,
+      "integrated_death_hazard": 0.39920629218203396
+    },
+    "as_m3kd": {
+      "population_fold_vs_start": 1.2020596693874714,
+      "net_population_loss": false,
+      "division_rate_at_endpoint": 0.07778512169472564,
+      "death_rate_at_endpoint": 0.07593068200631917,
+      "net_growth_rate_at_endpoint": 0.0018544396884064701,
+      "integrated_division_hazard": 3.27593794161129,
+      "integrated_death_hazard": 3.0919004685238773
+    },
+    "as_a5kd": {
+      "population_fold_vs_start": 6.732214559867625,
+      "net_population_loss": false,
+      "division_rate_at_endpoint": 0.05625708906880252,
+      "death_rate_at_endpoint": 0.007767850678573352,
+      "net_growth_rate_at_endpoint": 0.04848923839022917,
+      "integrated_division_hazard": 2.300500547714917,
+      "integrated_death_hazard": 0.3935952916404385
+    },
+    "as_aoxkd": {
+      "population_fold_vs_start": 0.1773062136282447,
+      "net_population_loss": true,
+      "division_rate_at_endpoint": 0.055416162580293284,
+      "death_rate_at_endpoint": 0.09122979245372852,
+      "net_growth_rate_at_endpoint": -0.03581362987343523,
+      "integrated_division_hazard": 2.259322228611536,
+      "integrated_death_hazard": 3.989198037111633
+    },
+    "as_a3bkd": {
+      "population_fold_vs_start": 6.344703602394609,
+      "net_population_loss": false,
+      "division_rate_at_endpoint": 0.05624417418433828,
+      "death_rate_at_endpoint": 0.008456411277754811,
+      "net_growth_rate_at_endpoint": 0.04778776290658347,
+      "integrated_division_hazard": 2.294918938793774,
+      "integrated_death_hazard": 0.44729721942450457
+    },
+    "as_nedresc": {
+      "population_fold_vs_start": 0.9738985603382065,
+      "net_population_loss": true,
+      "division_rate_at_endpoint": 0.011234437981204314,
+      "death_rate_at_endpoint": 0.009942288001804665,
+      "net_growth_rate_at_endpoint": 0.0012921499793996493,
+      "integrated_division_hazard": 0.47792808254493235,
+      "integrated_death_hazard": 0.5043505334962528
+    }
+  },
+  "repair_structural_scenarios": {
+    "interpretation": "Unweighted structural scenarios, not confidence or credible intervals. Q is a DDB2/NER proxy; Q_lesion is an assumed transfer to aggregate repair.",
+    "scenarios": {
+      "no_exposure_input": {
+        "parameters": {},
+        "endpoint_folds_vs_own_control": {
+          "as": {
+            "M_rep": 1.0,
+            "Q": 1.0,
+            "Q_lesion": 1.0,
+            "N": 4.000849977346697
+          },
+          "as_ftoi": {
+            "M_rep": 1.0,
+            "Q": 1.0,
+            "Q_lesion": 1.0,
+            "N": 1.7799186217649736
+          },
+          "as_m3kd": {
+            "M_rep": 0.4347826086956523,
+            "Q": 0.7880434782608695,
+            "Q_lesion": 1.0,
+            "N": 11.705553983088892
+          }
+        }
+      },
+      "partial_writer_input": {
+        "parameters": {
+          "w_rep_writer": 0.5
+        },
+        "endpoint_folds_vs_own_control": {
+          "as": {
+            "M_rep": 1.3154323881918069,
+            "Q": 1.1182871455719272,
+            "Q_lesion": 1.0,
+            "N": 4.000849977346697
+          },
+          "as_ftoi": {
+            "M_rep": 1.3044650881950737,
+            "Q": 1.1141744080731522,
+            "Q_lesion": 1.0,
+            "N": 1.7799186217649736
+          },
+          "as_m3kd": {
+            "M_rep": 0.639326945858765,
+            "Q": 0.8647476046970377,
+            "Q_lesion": 1.0,
+            "N": 11.705553983088892
+          }
+        }
+      },
+      "full_writer_input": {
+        "parameters": {
+          "w_rep_writer": 1.0
+        },
+        "endpoint_folds_vs_own_control": {
+          "as": {
+            "M_rep": 1.5557387880740858,
+            "Q": 1.2084020455277802,
+            "Q_lesion": 1.0,
+            "N": 4.000849977346697
+          },
+          "as_ftoi": {
+            "M_rep": 1.538645235063081,
+            "Q": 1.201991963148653,
+            "Q_lesion": 1.0,
+            "N": 1.7799186217649736
+          },
+          "as_m3kd": {
+            "M_rep": 0.8169061176603893,
+            "Q": 0.9313397941226468,
+            "Q_lesion": 1.0,
+            "N": 11.705553983088892
+          }
+        }
+      },
+      "fto_sensitive_site": {
+        "parameters": {
+          "w_rep_fto": 1.0
+        },
+        "endpoint_folds_vs_own_control": {
+          "as": {
+            "M_rep": 0.30674389378672917,
+            "Q": 0.7400289601700234,
+            "Q_lesion": 1.0,
+            "N": 4.000849966824074
+          },
+          "as_ftoi": {
+            "M_rep": 0.6838758958702945,
+            "Q": 0.8814534609513605,
+            "Q_lesion": 1.0,
+            "N": 1.779918608333132
+          },
+          "as_m3kd": {
+            "M_rep": 0.11014695021035475,
+            "Q": 0.666305106328883,
+            "Q_lesion": 1.0,
+            "N": 11.705554300543621
+          }
+        }
+      },
+      "writer_and_fto_input": {
+        "parameters": {
+          "w_rep_writer": 1.0,
+          "w_rep_fto": 1.0
+        },
+        "endpoint_folds_vs_own_control": {
+          "as": {
+            "M_rep": 0.5715935115490858,
+            "Q": 0.8393475668309089,
+            "Q_lesion": 1.0,
+            "N": 4.000850017063498
+          },
+          "as_ftoi": {
+            "M_rep": 1.1350629921738205,
+            "Q": 1.050648622065182,
+            "Q_lesion": 1.0,
+            "N": 1.7799186017715596
+          },
+          "as_m3kd": {
+            "M_rep": 0.22954973428441705,
+            "Q": 0.7110811503566596,
+            "Q_lesion": 1.0,
+            "N": 11.70555370257487
+          }
+        }
+      },
+      "legacy_universal_repair_transfer": {
+        "parameters": {
+          "repair_proxy_weight": 1.0
+        },
+        "endpoint_folds_vs_own_control": {
+          "as": {
+            "M_rep": 1.0,
+            "Q": 1.0,
+            "Q_lesion": 1.0,
+            "N": 4.000849977346697
+          },
+          "as_ftoi": {
+            "M_rep": 1.0,
+            "Q": 1.0,
+            "Q_lesion": 1.0,
+            "N": 1.7799186217649736
+          },
+          "as_m3kd": {
+            "M_rep": 0.4347826086956523,
+            "Q": 0.7880434782608695,
+            "Q_lesion": 0.7880434782608695,
+            "N": 14.434170452053488
+          }
+        }
+      },
+      "writer_input_with_assumed_repair_transfer": {
+        "parameters": {
+          "w_rep_writer": 1.0,
+          "repair_proxy_weight": 1.0
+        },
+        "endpoint_folds_vs_own_control": {
+          "as": {
+            "M_rep": 1.5557387864644852,
+            "Q": 1.2084020449252941,
+            "Q_lesion": 1.2084020449252941,
+            "N": 2.61785385340019
+          },
+          "as_ftoi": {
+            "M_rep": 1.5386452378168236,
+            "Q": 1.2019919641823869,
+            "Q_lesion": 1.2019919641823869,
+            "N": 1.2205352342226743
+          },
+          "as_m3kd": {
+            "M_rep": 0.8169061163499539,
+            "Q": 0.9313397936308663,
+            "Q_lesion": 0.9313397936308663,
+            "N": 12.634490826299148
+          }
+        }
+      }
+    }
+  },
+  "delayed_intervention_scenario": {
+    "intervention_start_nominal_day": 30.0,
+    "interpretation": "Illustrative delayed intervention, not a matched experimental protocol",
+    "population_diagnostics": {
+      "control": {
+        "population_fold_vs_start": 4.052155737441653,
+        "net_population_loss": false,
+        "division_rate_at_endpoint": 0.03729999999680687,
+        "death_rate_at_endpoint": 0.006205577325376971,
+        "net_growth_rate_at_endpoint": 0.031094422671429894,
+        "integrated_division_hazard": 1.6784999999757597,
+        "integrated_death_hazard": 0.2792509796425109
+      },
+      "as": {
+        "population_fold_vs_start": 5.9928497210792955,
+        "net_population_loss": false,
+        "division_rate_at_endpoint": 0.0562441782379299,
+        "death_rate_at_endpoint": 0.009942289642992125,
+        "net_growth_rate_at_endpoint": 0.04630188859493777,
+        "integrated_division_hazard": 2.2949190025934323,
+        "integrated_death_hazard": 0.5043505483136416
+      },
+      "as_ftoi": {
+        "population_fold_vs_start": 4.678783337631057,
+        "net_population_loss": false,
+        "division_rate_at_endpoint": 0.03333122256712482,
+        "death_rate_at_endpoint": 0.007303998202291536,
+        "net_growth_rate_at_endpoint": 0.026027224364833283,
+        "integrated_division_hazard": 2.0182577552610246,
+        "integrated_death_hazard": 0.47521829077067523
+      },
+      "as_m3kd": {
+        "population_fold_vs_start": 4.266718186045807,
+        "net_population_loss": false,
+        "division_rate_at_endpoint": 0.07765795821164528,
+        "death_rate_at_endpoint": 0.0743603383322357,
+        "net_growth_rate_at_endpoint": 0.0032976198794095885,
+        "integrated_division_hazard": 2.5810597323357887,
+        "integrated_death_hazard": 1.1302137671839296
+      },
+      "as_a5kd": {
+        "population_fold_vs_start": 6.143564370687713,
+        "net_population_loss": false,
+        "division_rate_at_endpoint": 0.05654192674337632,
+        "death_rate_at_endpoint": 0.007923841456554944,
+        "net_growth_rate_at_endpoint": 0.04861808528682138,
+        "integrated_division_hazard": 2.297569309370524,
+        "integrated_death_hazard": 0.48216286378207523
+      },
+      "as_aoxkd": {
+        "population_fold_vs_start": 2.1871629874337812,
+        "net_population_loss": false,
+        "division_rate_at_endpoint": 0.055141835947447954,
+        "death_rate_at_endpoint": 0.0911208596728359,
+        "net_growth_rate_at_endpoint": -0.03597902372538794,
+        "integrated_division_hazard": 2.2837264258047028,
+        "integrated_death_hazard": 1.5011177091206584
+      },
+      "as_a3bkd": {
+        "population_fold_vs_start": 6.1103320232482305,
+        "net_population_loss": false,
+        "division_rate_at_endpoint": 0.056244176065643345,
+        "death_rate_at_endpoint": 0.008456411645893672,
+        "net_growth_rate_at_endpoint": 0.047787764419749676,
+        "integrated_division_hazard": 2.2949189402642483,
+        "integrated_death_hazard": 0.4849364888611365
+      },
+      "as_nedresc": {
+        "population_fold_vs_start": 3.2416520604178043,
+        "net_population_loss": false,
+        "division_rate_at_endpoint": 0.011252202814882484,
+        "death_rate_at_endpoint": 0.009942289266253984,
+        "net_growth_rate_at_endpoint": 0.0013099135486284996,
+        "integrated_division_hazard": 1.6804703507726748,
+        "integrated_death_hazard": 0.5043505413105773
+      }
+    }
+  },
+  "t_end_days": 45.0,
+  "endpoints_fold_vs_control": {
+    "control": {
+      "R": 1.0,
+      "Fo": 1.0,
+      "M_a3b": 1.0,
+      "M_ned": 1.0,
+      "M_rep": 1.0,
+      "M_aox": 1.0,
+      "M_mean4": 1.0,
+      "A3B": 1.0,
+      "NEDD4L": 1.0,
+      "A": 1.0,
+      "Q": 1.0,
+      "WNT": 1.0,
+      "N": 1.0,
+      "lnP": 0.0
+    },
+    "as": {
+      "R": 3.3617276714260305,
+      "Fo": 4.228890789093847,
+      "M_a3b": 0.5896373979998997,
+      "M_ned": 0.6088575629487517,
+      "M_rep": 1.0,
+      "M_aox": 1.2364381861558342,
+      "M_mean4": 0.830257459500901,
+      "A3B": 1.468703630432252,
+      "NEDD4L": 0.7395657827451044,
+      "A": 1.4334559792895332,
+      "Q": 1.0,
+      "WNT": 1.5078867832520715,
+      "N": 4.000849977346697,
+      "lnP": 0.5645525859138893
+    },
+    "as_ftoi": {
+      "R": 3.0357451482120066,
+      "Fo": 4.151336753909637,
+      "M_a3b": 1.1242167748206333,
+      "M_ned": 1.1135758942905039,
+      "M_rep": 1.0,
+      "M_aox": 1.4607431483819464,
+      "M_mean4": 1.1682438321614863,
+      "A3B": 0.9118714546945383,
+      "NEDD4L": 1.0763947027546918,
+      "A": 1.6411431628000062,
+      "Q": 1.0,
+      "WNT": 0.8861271026024397,
+      "N": 1.7799186217649736,
+      "lnP": -0.6034989969431711
+    },
+    "as_m3kd": {
+      "R": 4.9482435479160625,
+      "Fo": 4.38965782880661,
+      "M_a3b": 0.24291879603347774,
+      "M_ned": 0.25794134843556316,
+      "M_rep": 0.4347826086956523,
+      "M_aox": 0.590351572506924,
+      "M_mean4": 0.36721360914571527,
+      "A3B": 2.4319289252417433,
+      "NEDD4L": 0.505401266897761,
+      "A": 0.813543898310162,
+      "Q": 0.7880434782608695,
+      "WNT": 2.0853920025395545,
+      "N": 11.705553983088892,
+      "lnP": -1.753181110455335
+    },
+    "as_a5kd": {
+      "R": 2.811082164201196,
+      "Fo": 4.071522477882237,
+      "M_a3b": 0.5894901746154602,
+      "M_ned": 0.6087125605497987,
+      "M_rep": 1.9607843137254903,
+      "M_aox": 1.643951757671097,
+      "M_mean4": 1.1342425235217113,
+      "A3B": 1.4689657298669585,
+      "NEDD4L": 0.739415232082269,
+      "A": 1.8121986453366734,
+      "Q": 1.3602941176470589,
+      "WNT": 1.508232950906229,
+      "N": 3.485298691853977,
+      "lnP": 0.7323915343511648
+    },
+    "as_aoxkd": {
+      "R": 5.85212009339484,
+      "Fo": 4.422225187861789,
+      "M_a3b": 0.6043984710072497,
+      "M_ned": 0.6233688646166485,
+      "M_rep": 1.0,
+      "M_aox": 1.2807879798920705,
+      "M_mean4": 0.8482395590124583,
+      "A3B": 1.4443453485094941,
+      "NEDD4L": 0.749269490088473,
+      "A": 0.610681854765149,
+      "Q": 1.0,
+      "WNT": 1.4856880048335954,
+      "N": 6.8981064775017655,
+      "lnP": -4.514374621708708
+    },
+    "as_a3bkd": {
+      "R": 3.361727670645281,
+      "Fo": 4.2288905076600605,
+      "M_a3b": 0.5896374298185338,
+      "M_ned": 0.6088575935080413,
+      "M_rep": 1.0,
+      "M_aox": 1.23643820989944,
+      "M_mean4": 0.8302574820811378,
+      "A3B": 0.4406110722342534,
+      "NEDD4L": 0.7395658157558334,
+      "A": 1.4334559805278992,
+      "Q": 1.0,
+      "WNT": 1.5078867073549092,
+      "N": 0.944134385812749,
+      "lnP": 0.646863146417421
+    },
+    "as_nedresc": {
+      "R": 3.361727554056418,
+      "Fo": 4.228890022721505,
+      "M_a3b": 0.5896374805083374,
+      "M_ned": 0.6088576442614109,
+      "M_rep": 1.0,
+      "M_aox": 1.2364382435481955,
+      "M_mean4": 0.8302575177384752,
+      "A3B": 1.4687034842996816,
+      "NEDD4L": 1.848914644616193,
+      "A": 1.4334560462309334,
+      "Q": 1.0,
+      "WNT": 0.3011913667883185,
+      "N": 4.000850249198852,
+      "lnP": -2.0568462061197357
+    }
+  },
+  "endpoint_units": {
+    "R": "fold vs control",
+    "Fo": "fold vs control",
+    "M_a3b": "fold vs control",
+    "M_ned": "fold vs control",
+    "M_rep": "fold vs control",
+    "M_aox": "fold vs control",
+    "M_mean4": "fold vs control",
+    "A3B": "fold vs control",
+    "NEDD4L": "fold vs control",
+    "A": "fold vs control",
+    "Q": "fold vs control",
+    "WNT": "fold vs control",
+    "N": "fold vs control",
+    "lnP": "log2 fold vs control"
+  },
+  "model_checks": {
+    "V1": {
+      "role": "calibration/encoding consistency",
+      "edge": "KCC5 -> EMD1",
+      "statement": "Arsenic raises ROS and FTO activity",
+      "source": "As-induced ROS; FTO protein stabilised by impaired autophagy (NC 6, JBC 3A)",
+      "passed": true
+    },
+    "V2": {
+      "role": "calibration/encoding consistency",
+      "edge": "EMD1 (site-specific)",
+      "statement": "At nominal calibration the four m6A sites do NOT move together: A3B and NEDD4L fall while the antioxidant module rises; the three-sign conjunction is audited separately across stress-test draws",
+      "source": "prespecified published exon-1 NEDD4L interval 0.61x; m6A microarray antioxidant core 1.28x over platform baseline",
+      "passed": true
+    },
+    "V3": {
+      "role": "calibration/encoding consistency",
+      "edge": "EMD1 -> KCC2",
+      "statement": "Arsenic raises APOBEC3B and mutational burden",
+      "source": "JBC 1B/1G: As raises A3B protein and mutation count 2 -> 8",
+      "passed": true
+    },
+    "V4": {
+      "role": "calibration/encoding consistency",
+      "edge": "EMD1 -> KCC2 (rescue)",
+      "statement": "FTO inhibition reverses the A3B rise and lowers mutational burden",
+      "source": "JBC 3K: A3B mRNA 0.12x under FB23-2; JBC 3Q: mutations 9 -> 4",
+      "passed": true
+    },
+    "V5": {
+      "role": "out-of-calibration qualitative check",
+      "edge": "EMD1 -> KCC2 (epistasis)",
+      "statement": "APOBEC3B knockdown lowers burden without lowering ROS",
+      "source": "JBC 1G: A3B shRNA returns mutation count toward baseline; JBC 3I rescue",
+      "passed": true
+    },
+    "V6": {
+      "role": "structural regression",
+      "edge": "EMD1 -> KCC3  (ASSUMED ZERO ARSENIC INPUT)",
+      "statement": "The DDB2/NER proxy stays flat under the nominal zero-input assumption. The edge is not absent -- V13 shows it responds to a writer perturbation -- and the measurement cannot exclude a moderate effect",
+      "source": "First-three-exon DDB2 sits at 0.91x, background percentile 38 among 336 quantified transcripts, with the same-pathway control XPC also inside the null. The repair-set median this check originally rested on had no power: it stays within 0.97-1.03 even where transformed-line DDB2 is 0.39x. See fit/repair_edge.py.",
+      "passed": true
+    },
+    "V7": {
+      "role": "calibration/encoding consistency",
+      "edge": "EMD1 -> KCC10",
+      "statement": "At nominal calibration arsenic lowers NEDD4L, de-represses WNT and raises clonal expansion; the expansion sign is sensitivity-dependent",
+      "source": "NC 3e: NEDD4L 0.68x; NC 1e: proliferation 1.5x",
+      "passed": true
+    },
+    "V8": {
+      "role": "data concordance",
+      "edge": "EMD1 -> KCC10 (rescue)",
+      "statement": "FTO inhibition restores NEDD4L and suppresses expansion",
+      "source": "NC 3l: NEDD4L 1.66x in FTO KO; NC Fig 2: FTO KO reduces tumour growth",
+      "passed": true
+    },
+    "V9": {
+      "role": "out-of-calibration qualitative check",
+      "edge": "EMD1 -> KCC10 (independent handle)",
+      "statement": "Direct NEDD4L re-expression suppresses expansion with FTO untouched",
+      "source": "NC Fig 4: NEDD4L rescue",
+      "passed": true
+    },
+    "V10": {
+      "role": "calibration/encoding consistency",
+      "edge": "feedback loop",
+      "statement": "At nominal calibration m6A-dependent antioxidant adaptation holds the redox balance and writer disruption lowers expansion; the writer-KD expansion direction is not robust across the parameter stress test",
+      "source": "Zhao Fig 5B/S5b/S5c: siMETTL3 0.61-0.65x and STM2457 0.58-0.66x antioxidant level, by two independent handles",
+      "passed": true
+    },
+    "V11": {
+      "role": "calibration/encoding consistency",
+      "edge": "EMD1 -> antioxidant (mechanism)",
+      "statement": "m6A STABILISES the antioxidant transcripts: writer knockdown raises their effective decay rate by at least 1.5x (model ~1.8x; measured ~2.2x)",
+      "source": "Zhao Fig 5B chase: siMETTL3 raises the decay constant ~2.2x in 16 of 18 gene x stage cells. This is why the coupling is a decay term and not the translation gain first assumed.",
+      "passed": true
+    },
+    "V12": {
+      "role": "data concordance",
+      "edge": "reader-specific divergence (CENTRAL CLAIM)",
+      "statement": "One FTO perturbation moves APOBEC3B and NEDD4L in OPPOSITE directions, because a decay reader binds one and a stabilising reader the other",
+      "source": "Both sides now measured directly: JBC 3E (FTO KD -> 3.3x FASTER A3B decay) vs NC 3m (FTO KO -> SLOWER NEDD4L decay). Same perturbation, opposite outcome. Opposite signs alone do not exclude a shared scalar with reader-specific responses.",
+      "passed": true
+    },
+    "V13": {
+      "role": "structural regression",
+      "edge": "EMD1 -> KCC3  (EDGE LIVE; ARSENIC INPUT ASSUMED ZERO)",
+      "statement": "edge live: writer knockdown moves the site to 0.43x and the DDB2/NER proxy Q to 0.79x; arsenic input assumed zero: arsenic leaves the site at 1.00x (inside the measured cross-transcript null [0.54, 1.86]) and Q at 1.00x. Structural check of the encoding, not a detection of biological non-engagement -- the null is wide enough to contain the counterfactual too",
+      "source": "Measured alongside (an observation, not a test of this model): annotation-fixed first-three-exon DDB2 is 1.31x under writer knockdown and 0.91x under arsenic, against 334 and 336 quantified background transcripts. XPC moves 1.59x and 0.96x. Both DDB2 contrasts remain inside their cross-transcript nulls; this track reanalysis is not a positive control for the modelled writer response. See fit/repair_edge.py",
+      "passed": true
+    }
+  },
+  "model_checks_passed": 13,
+  "out_of_calibration_checks_passed": 2,
+  "out_of_calibration_checks_total": 2,
+  "ensemble": {
+    "R": {
+      "p5": 2.534534130613191,
+      "p50": 3.363363593083837,
+      "p95": 4.948243118215287
+    },
+    "Fo": {
+      "p5": 2.8678929932354995,
+      "p50": 4.098426027577217,
+      "p95": 6.366695136880073
+    },
+    "Ab": {
+      "p5": 1.0,
+      "p50": 1.0,
+      "p95": 1.0
+    },
+    "M_a3b": {
+      "p5": 0.4070854131095611,
+      "p50": 0.6110588527084305,
+      "p95": 0.8563731742173603
+    },
+    "M_ned": {
+      "p5": 0.4230776504934286,
+      "p50": 0.6281621353839,
+      "p95": 0.8614214353904742
+    },
+    "M_rep": {
+      "p5": 0.9999999999999999,
+      "p50": 1.0,
+      "p95": 1.0
+    },
+    "M_aox": {
+      "p5": 0.9722480576644328,
+      "p50": 1.235141569527991,
+      "p95": 1.5350236697600568
+    },
+    "M_mean4": {
+      "p5": 0.6810370627153712,
+      "p50": 0.8427923820752801,
+      "p95": 1.0207758074855
+    },
+    "A3B": {
+      "p5": 1.125765655625808,
+      "p50": 1.4278816917877326,
+      "p95": 1.827569467817677
+    },
+    "NEDD4L": {
+      "p5": 0.6156162738460049,
+      "p50": 0.7583249927817693,
+      "p95": 0.9055371663959979
+    },
+    "A": {
+      "p5": 1.1618702201313185,
+      "p50": 1.4334435174341158,
+      "p95": 1.7614844446878721
+    },
+    "Q": {
+      "p5": 1.0,
+      "p50": 1.0,
+      "p95": 1.0
+    },
+    "WNT": {
+      "p5": 1.1464859760826733,
+      "p50": 1.4358333806821533,
+      "p95": 2.086542821007728
+    },
+    "L": {
+      "p5": 2.194635244943165,
+      "p50": 3.924907134491807,
+      "p95": 8.544356040086779
+    },
+    "N": {
+      "p5": 2.0379952519640567,
+      "p50": 3.5049452646852437,
+      "p95": 6.953994062103283
+    },
+    "lnP": {
+      "p5": -1.3591976699621162,
+      "p50": 0.3142616089691174,
+      "p95": 1.6160231284873323
+    }
+  },
+  "ensemble_draws_ok": 400,
+  "ensemble_interpretation": "Independent log-normal parameter stress test; heuristic 5th-95th sensitivity bands, not confidence intervals, credible intervals, or a calibration-conditioned posterior.",
+  "ensemble_check_sensitivity": {
+    "V10": {
+      "interpretation": "Heuristic parameter-stress-test frequency, not a probability of truth or an additional validation.",
+      "draws": 400,
+      "passes": 332,
+      "pass_fraction": 0.83,
+      "arsenic_adaptation_pass_fraction": 0.99,
+      "writer_kd_lowers_antioxidant_pass_fraction": 1.0,
+      "writer_kd_lowers_expansion_vs_arsenic_pass_fraction": 0.8375,
+      "writer_kd_log2_expansion_p5_p50_p95": [
+        -5.1806285415612425,
+        -1.262809200749233,
+        1.7150993588247927
+      ],
+      "writer_kd_minus_arsenic_log2_expansion_p5_p50_p95": [
+        -4.667438661800182,
+        -1.5060533340570443,
+        1.053738525632174
+      ],
+      "robust_at_5th_95th_sensitivity_level": false
+    }
+  },
+  "ensemble_model_check_sensitivity": {
+    "interpretation": "Fraction of independent parameter stress-test draws retaining each nominal model-check sign; not a validation probability, confidence level, or posterior probability.",
+    "draws": 400,
+    "checks": {
+      "V1": {
+        "role": "calibration/encoding consistency",
+        "passes": 400,
+        "pass_fraction": 1.0
+      },
+      "V2": {
+        "role": "calibration/encoding consistency",
+        "passes": 352,
+        "pass_fraction": 0.88
+      },
+      "V3": {
+        "role": "calibration/encoding consistency",
+        "passes": 393,
+        "pass_fraction": 0.9825
+      },
+      "V4": {
+        "role": "calibration/encoding consistency",
+        "passes": 400,
+        "pass_fraction": 1.0
+      },
+      "V5": {
+        "role": "out-of-calibration qualitative check",
+        "passes": 400,
+        "pass_fraction": 1.0
+      },
+      "V6": {
+        "role": "structural regression",
+        "passes": 400,
+        "pass_fraction": 1.0
+      },
+      "V7": {
+        "role": "calibration/encoding consistency",
+        "passes": 294,
+        "pass_fraction": 0.735
+      },
+      "V8": {
+        "role": "data concordance",
+        "passes": 382,
+        "pass_fraction": 0.955
+      },
+      "V9": {
+        "role": "out-of-calibration qualitative check",
+        "passes": 400,
+        "pass_fraction": 1.0
+      },
+      "V10": {
+        "role": "calibration/encoding consistency",
+        "passes": 332,
+        "pass_fraction": 0.83
+      },
+      "V11": {
+        "role": "calibration/encoding consistency",
+        "passes": 400,
+        "pass_fraction": 1.0
+      },
+      "V12": {
+        "role": "data concordance",
+        "passes": 400,
+        "pass_fraction": 1.0
+      },
+      "V13": {
+        "role": "structural regression",
+        "passes": 400,
+        "pass_fraction": 1.0
+      }
+    }
+  },
+  "repair_edge": {
+    "model_arsenic": {
+      "M_rep_fold": 1.0,
+      "Q_fold": 1.0
+    },
+    "model_writer_kd": {
+      "M_rep_fold": 0.4347826086956523,
+      "Q_fold": 0.7880434782608695
+    },
+    "counterfactual_params": {
+      "w_rep_writer": 1.0
+    },
+    "counterfactual_M_rep_fold": 1.5557387880740858,
+    "counterfactual_Q_fold": 1.2084020455277802,
+    "counterfactual_N_fold": 4.000849977346697,
+    "counterfactual_draws_ok": 400,
+    "counterfactual_Q_p5_p95": [
+      1.099380101565304,
+      1.344430413746557
+    ],
+    "counterfactual_M_rep_p5_p95": [
+      1.350155574745269,
+      1.835669701248832
+    ],
+    "measured_ddb2_first_three_exons": {
+      "arsenic": {
+        "effect": 0.9083368458716881,
+        "background_pct": 37.797619047619044
+      },
+      "writer_kd": {
+        "effect": 1.3137988452814229,
+        "background_pct": 78.1437125748503
+      },
+      "transformed": {
+        "effect": 0.3896584042785915,
+        "background_pct": 2.3952095808383236
+      },
+      "uvb": {
+        "effect": 0.9531399619179151,
+        "background_pct": 42.55952380952381
+      }
+    },
+    "measured_xpc_same_pathway_comparator": {
+      "arsenic": 0.9554652495028385,
+      "writer_kd": 1.589504615700011,
+      "transformed": 0.7206576588193051,
+      "uvb": 1.0605404883864882
+    },
+    "cross_transcript_null_5_95": [
+      0.5438026232668061,
+      1.8642027242120363
+    ],
+    "cross_transcript_null_by_contrast": {
+      "arsenic": [
+        0.5438026232668061,
+        1.8642027242120363
+      ],
+      "transformed": [
+        0.48604201613716175,
+        2.1270301588898786
+      ],
+      "writer_kd": [
+        0.5375148806488801,
+        1.8581768348092378
+      ],
+      "uvb": [
+        0.5976183974129734,
+        1.74630172922041
+      ]
+    },
+    "n_background_sampled": 600,
+    "n_background_quantified": {
+      "arsenic": 336,
+      "writer_kd": 334,
+      "transformed": 334,
+      "uvb": 336
+    },
+    "n_repair_quantified": {
+      "arsenic": 262,
+      "writer_kd": 258,
+      "transformed": 261,
+      "uvb": 258
+    },
+    "repair_feature_definition": "annotation-only, strand-aware first three exons of the longest spliced hg19 RefSeq NM_ isoform; identical across conditions and genes",
+    "ddb2_feature": {
+      "accession": "NM_000107",
+      "chrom": "chr11",
+      "strand": "+",
+      "exon_intervals_0based_half_open": [
+        [
+          47236524,
+          47236814
+        ],
+        [
+          47237886,
+          47238023
+        ],
+        [
+          47238408,
+          47238600
+        ]
+      ],
+      "exonic_nt": 619
+    },
+    "control_input_qc": {
+      "fixed_bin_nt": 100,
+      "minimum_passing_bins_per_control_replicate": 3,
+      "minimum_library_normalised_density": 1.0,
+      "eligibility_uses_treatment_tracks": false
+    },
+    "writer_kd_track_reanalysis_supports_decrease": false,
+    "edge_live_arsenic_input_assumed_zero": true
+  }
+}
