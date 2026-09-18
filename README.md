@@ -1,4 +1,4 @@
-# EMD1 simulation: reviewer reproduction archive
+# EMD1 simulation
 
 Code, derived inputs and numerical reference output for the accompanying
 manuscript, which contains the methods, results and interpretation.
