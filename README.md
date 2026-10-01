@@ -1,4 +1,4 @@
-# EMD1: minimal reproducibility deposit
+# EMD1: illustrative mechanistic simulation
 
 An illustrative mechanistic simulation of EMD1 (transcript-specific m⁶A
 regulation under oxidative stress), with chronic arsenic as the exemplar
