@@ -1,21 +1,21 @@
 arm,paper,panel,quantity,condition,value,unit,read_method,p_value
-APOBEC3B/KCC2,"Wei et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3D,"APOBEC3B m6A level, FTO knockdown",NC siRNA,1.0,fold vs NC,"bar heights, y-axis 0-50, clear gridlines",
-APOBEC3B/KCC2,"Wei et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3D,"APOBEC3B m6A level, FTO knockdown",FTO siRNA-1,7.5,fold vs NC,"bar heights, y-axis 0-50, clear gridlines",0.0214
-APOBEC3B/KCC2,"Wei et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3D,"APOBEC3B m6A level, FTO knockdown",FTO siRNA-2,36.5,fold vs NC,"bar heights, y-axis 0-50, clear gridlines",0.001
-APOBEC3B/KCC2,"Wei et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3E,"APOBEC3B mRNA decay constant, FTO knockdown",NC siRNA,0.055,1/h,"colour-detected curve points at 0/2/4/8 h, slope of ln(pct)",
-APOBEC3B/KCC2,"Wei et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3E,"APOBEC3B mRNA decay constant, FTO knockdown",FTO siRNA-1,0.181,1/h,"colour-detected curve points at 0/2/4/8 h, slope of ln(pct)",
-APOBEC3B/KCC2,"Wei et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3E,"APOBEC3B mRNA decay constant, FTO knockdown",FTO siRNA-2,0.183,1/h,"colour-detected curve points at 0/2/4/8 h, slope of ln(pct)",
-APOBEC3B/KCC2,"Wei et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3K,"APOBEC3B mRNA level, FTO inhibition",DMSO,1.0,fold vs DMSO,"bar heights, y-axis 0-1.5",
-APOBEC3B/KCC2,"Wei et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3K,"APOBEC3B mRNA level, FTO inhibition",FB23-2,0.12,fold vs DMSO,"bar heights, y-axis 0-1.5",0.0233
-APOBEC3B/KCC2,"Wei et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3M,"APOBEC3B m6A level, FTO inhibition",DMSO,1.0,fold vs DMSO,"bar heights, y-axis 0-6",
-APOBEC3B/KCC2,"Wei et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3M,"APOBEC3B m6A level, FTO inhibition",FB23-2,4.7,fold vs DMSO,"bar heights, y-axis 0-6",0.0032
-APOBEC3B/KCC2,"Wei et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3B,APOBEC3B mRNA bound by FTO (RIP),IgG,1.0,fold vs IgG,"bar heights, y-axis 0-4",
-APOBEC3B/KCC2,"Wei et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3B,APOBEC3B mRNA bound by FTO (RIP),FTO,3.0,fold vs IgG,"bar heights, y-axis 0-4",0.037
-APOBEC3B/KCC2,"Wei et al., J Biol Chem 298:101563 (2022)  PMID 34998823",1G,mutation count by substitution type,Ctrl shRNA,2.0,max count across substitution types,"tallest bar per group, y-axis 0-10, integer counts",
-APOBEC3B/KCC2,"Wei et al., J Biol Chem 298:101563 (2022)  PMID 34998823",1G,mutation count by substitution type,Ctrl shRNA +As,8.0,max count across substitution types,"tallest bar per group, y-axis 0-10, integer counts",
-APOBEC3B/KCC2,"Wei et al., J Biol Chem 298:101563 (2022)  PMID 34998823",1G,mutation count by substitution type,A3B shRNA +As,3.0,max count across substitution types,"tallest bar per group, y-axis 0-10, integer counts",
-APOBEC3B/KCC2,"Wei et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3Q,"mutation count by substitution type, FTO inhibition",DMSO +As,9.0,max count across substitution types,"tallest bar per group, y-axis 0-10, integer counts",
-APOBEC3B/KCC2,"Wei et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3Q,"mutation count by substitution type, FTO inhibition",FB23-2 +As,4.0,max count across substitution types,"tallest bar per group, y-axis 0-10, integer counts",
+APOBEC3B/KCC2,"Gao et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3D,"APOBEC3B m6A level, FTO knockdown",NC siRNA,1.0,fold vs NC,"bar heights, y-axis 0-50, clear gridlines",
+APOBEC3B/KCC2,"Gao et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3D,"APOBEC3B m6A level, FTO knockdown",FTO siRNA-1,7.5,fold vs NC,"bar heights, y-axis 0-50, clear gridlines",0.0214
+APOBEC3B/KCC2,"Gao et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3D,"APOBEC3B m6A level, FTO knockdown",FTO siRNA-2,36.5,fold vs NC,"bar heights, y-axis 0-50, clear gridlines",0.001
+APOBEC3B/KCC2,"Gao et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3E,"APOBEC3B mRNA decay constant, FTO knockdown",NC siRNA,0.055,1/h,"colour-detected curve points at 0/2/4/8 h, slope of ln(pct)",
+APOBEC3B/KCC2,"Gao et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3E,"APOBEC3B mRNA decay constant, FTO knockdown",FTO siRNA-1,0.181,1/h,"colour-detected curve points at 0/2/4/8 h, slope of ln(pct)",
+APOBEC3B/KCC2,"Gao et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3E,"APOBEC3B mRNA decay constant, FTO knockdown",FTO siRNA-2,0.183,1/h,"colour-detected curve points at 0/2/4/8 h, slope of ln(pct)",
+APOBEC3B/KCC2,"Gao et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3K,"APOBEC3B mRNA level, FTO inhibition",DMSO,1.0,fold vs DMSO,"bar heights, y-axis 0-1.5",
+APOBEC3B/KCC2,"Gao et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3K,"APOBEC3B mRNA level, FTO inhibition",FB23-2,0.12,fold vs DMSO,"bar heights, y-axis 0-1.5",0.0233
+APOBEC3B/KCC2,"Gao et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3M,"APOBEC3B m6A level, FTO inhibition",DMSO,1.0,fold vs DMSO,"bar heights, y-axis 0-6",
+APOBEC3B/KCC2,"Gao et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3M,"APOBEC3B m6A level, FTO inhibition",FB23-2,4.7,fold vs DMSO,"bar heights, y-axis 0-6",0.0032
+APOBEC3B/KCC2,"Gao et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3B,APOBEC3B mRNA bound by FTO (RIP),IgG,1.0,fold vs IgG,"bar heights, y-axis 0-4",
+APOBEC3B/KCC2,"Gao et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3B,APOBEC3B mRNA bound by FTO (RIP),FTO,3.0,fold vs IgG,"bar heights, y-axis 0-4",0.037
+APOBEC3B/KCC2,"Gao et al., J Biol Chem 298:101563 (2022)  PMID 34998823",1G,mutation count by substitution type,Ctrl shRNA,2.0,max count across substitution types,"tallest bar per group, y-axis 0-10, integer counts",
+APOBEC3B/KCC2,"Gao et al., J Biol Chem 298:101563 (2022)  PMID 34998823",1G,mutation count by substitution type,Ctrl shRNA +As,8.0,max count across substitution types,"tallest bar per group, y-axis 0-10, integer counts",
+APOBEC3B/KCC2,"Gao et al., J Biol Chem 298:101563 (2022)  PMID 34998823",1G,mutation count by substitution type,A3B shRNA +As,3.0,max count across substitution types,"tallest bar per group, y-axis 0-10, integer counts",
+APOBEC3B/KCC2,"Gao et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3Q,"mutation count by substitution type, FTO inhibition",DMSO +As,9.0,max count across substitution types,"tallest bar per group, y-axis 0-10, integer counts",
+APOBEC3B/KCC2,"Gao et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3Q,"mutation count by substitution type, FTO inhibition",FB23-2 +As,4.0,max count across substitution types,"tallest bar per group, y-axis 0-10, integer counts",
 NEDD4L/KCC10,"Cui et al., Nat Commun 12:2183 (2021)  PMID 33846348",3h,"NEDD4L exon-1 m6A, arsenic transformation",Control,1.0,fold vs control,"bar heights, y-axis 0-1.2",
 NEDD4L/KCC10,"Cui et al., Nat Commun 12:2183 (2021)  PMID 33846348",3h,"NEDD4L exon-1 m6A, arsenic transformation",As-T,0.12,fold vs control,"bar heights, y-axis 0-1.2",0.0002
 NEDD4L/KCC10,"Cui et al., Nat Commun 12:2183 (2021)  PMID 33846348",3k / 3j,"NEDD4L m6A, FTO knockout",WT,1.0,fold vs WT,"bar heights, y-axes 0-4 and 0-5",
