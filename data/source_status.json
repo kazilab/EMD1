@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "scope": "Scientific status of curated source summaries and unresolved assay mappings",
+  "sources": {
+    "nedd4l_exon1": {
+      "status": "unresolved_coordinate_and_quantification",
+      "trusted_default_interval": null,
+      "quantitative_target_fold": null,
+      "publication_doi": "10.1038/s41467-021-22469-6",
+      "transcript": "NM_001144966.3",
+      "published_interval": "NC_000018.10:58221610-58221760",
+      "source_assembly": "hg38",
+      "deposited_track_assembly": "hg19",
+      "quarantined_historical_interval_0based": {"chrom": "chr18", "start": 55712458, "end": 55712608},
+      "withdrawn_historical_target_fold": 0.61,
+      "reason": "The excluded hg19 interval is upstream of the cited transcript. A quantitative estimate requires a verified mapping and extraction from the original tracks.",
+      "next_step": "Document the coordinate convention and supply checksummed assembly-chain and RefSeq files to verify the mapped interval lies in the first exon.",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41467-021-22469-6",
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4339741",
+        "https://www.ncbi.nlm.nih.gov/nuccore/NM_001144966.3"
+      ]
+    },
+    "gao_mutation_category_bars": {
+      "status": "descriptive_assay_summaries_only",
+      "panels": ["1G", "3Q"],
+      "statistic": "maximum count across substitution-category bars from cloned TP53 3D-PCR products",
+      "numerical_values_retained": true,
+      "eligible_for_aggregate_mutation_index_calibration": false,
+      "reason": "These category maxima lack denominators for total burden or rate. A quantitative comparison to the ODE fixation index requires an assay-to-model mapping.",
+      "publication_doi": "10.1016/j.jbc.2022.101563",
+      "evidence_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8814665/"
+    },
+    "gao_a3b_3k": {
+      "status": "protocol_specific_approximate_abundance_contrast",
+      "panel": "3K",
+      "statistic": "APOBEC3B mRNA abundance FB23-2 divided by its own DMSO comparator",
+      "approximate_ratio": 0.12,
+      "arsenic_exposure": "unspecified in this panel",
+      "matched_to_as_ftoi_over_as": false,
+      "matched_to_baseline_ftoi_over_baseline": "diagnostic comparison only, with uncalibrated duration and intervention strength",
+      "publication_doi": "10.1016/j.jbc.2022.101563",
+      "evidence_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8814665/"
+    },
+    "curated_snapshot": {
+      "status": "offline_rebuild_from_snapshot_export",
+      "independent_raw_reextraction": false,
+      "reason": "The CSV exports reproduce the curated database. Repeating the source measurements requires the original workbooks, figure panels or coverage tracks."
+    }
+  }
+}

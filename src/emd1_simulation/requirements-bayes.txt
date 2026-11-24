@@ -1,0 +1,5 @@
+# Optional hierarchical decay/reader sub-model in analysis/bayes.py.
+-r requirements.txt
+openpyxl>=3.1
+jax>=0.4
+numpyro>=0.15

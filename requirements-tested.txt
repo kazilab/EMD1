@@ -1,0 +1,8 @@
+# Tested with Python 3.13.9. Use as pip constraints with requirements.txt.
+numpy==2.5.1
+scipy==1.18.0
+pandas==3.0.5
+matplotlib==3.11.1
+jupyterlab==4.4.7
+ipykernel==6.31.0
+nbclient==0.10.2

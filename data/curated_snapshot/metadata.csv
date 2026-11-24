@@ -1,0 +1,18 @@
+key,value
+schema_version,1
+chase_units,"k in h^-1, half_life in hours, exposure stage in experimental weeks"
+repair_coordinates,"hg19, 0-based half-open exon intervals in transcriptional order"
+repair_null,5th–95th percentiles across background transcripts. Replicate uncertainty is unquantified.
+model_time,Nominal model days have no calibrated correspondence to experimental chase hours.
+source_manifest_sha256,989729ff1e6b9195a705665142b475f064b305f47584553a80b2d832105f2537
+scope,Curated source measurements and estimates for EMD1.
+digitisation,Approximate published figure readings. Gao panels 1G and 3Q report maximum counts across substitution categories in cloned TP53 3D-PCR products.
+builder,Offline import of checksummed CSV exports by processing.build_database.build_snapshot.
+source_database_sha256,7c80d2179df0d256c080b98937bf2961fa1780b52b8664d4e6dd8d49199e4a4d
+source_status_sha256,7c0cfde5d254d471083fb8ed0095a51e497e0b7236c998cbdf47c9b64f39194b
+nedd4l_coordinate_status,Unresolved hg38-to-hg19 mapping for the published exon-1 interval. No enrichment target.
+mutation_endpoint_status,Descriptive category maxima. A mapping to the aggregate fixation index is unavailable.
+a3b_3k_protocol,FB23-2 relative to DMSO. Gao et al. do not specify arsenic exposure for panel 3K.
+rebuild_origin,export_of_supplied_curated_sqlite
+independent_raw_reextraction,false
+measurement_values_preserved,The 177 measurement rows retain the values and identifiers in the source database.

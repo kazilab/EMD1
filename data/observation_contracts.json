@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "scope": "Assay statistics, model observables and requirements for quantitative comparison.",
+  "records": [
+    {
+      "id": "cui_nedd4l_exon1",
+      "source": "Cui et al. 2021, Figure 3f and GEO GSE145923",
+      "source_url": "https://doi.org/10.1038/s41467-021-22469-6",
+      "source_observable": "Regional MeRIP IP/input enrichment at the published NEDD4L exon-1 feature",
+      "source_denominator": "Matched untreated regional IP/input enrichment, with replicate and normalization rules documented",
+      "source_exposure": "Arsenic exposure in the source experiment",
+      "source_time": "Experimental protocol with uncalibrated model time",
+      "model_observable": "M_ned occupancy fold versus the model control",
+      "status": "quarantined_coordinate_inconsistency",
+      "quantitative_fit_eligible": false,
+      "required_before_fitting": "Verify assembly conversion and coordinate convention for NM_001144966.3, re-extract IP/input replicates, and justify the enrichment-to-occupancy mapping."
+    },
+    {
+      "id": "gao_tp53_category_maxima",
+      "source": "Gao et al. 2022, Figures 1G and 3Q",
+      "source_url": "https://doi.org/10.1016/j.jbc.2022.101563",
+      "source_observable": "Approximate maximum bar count across substitution categories in sequenced TP53 3D-PCR products",
+      "source_denominator": "Maximum category count in the comparison arm. Molecule and nucleotide-opportunity denominators are unavailable.",
+      "source_exposure": "Panel-specific arsenic and knockdown/inhibitor conditions",
+      "source_time": "Panel-specific endpoint with uncalibrated model time",
+      "model_observable": "N, an arbitrary cumulative fixation index for a representative modeled lineage",
+      "status": "qualitative_only_observation_mapping_missing",
+      "quantitative_fit_eligible": false,
+      "required_before_fitting": "Full counts, sampling opportunities, assay selection and uncertainty, matched exposure/intervention/time, and a defensible observation function connecting the selected statistic to N."
+    },
+    {
+      "id": "gao_a3b_inhibitor_3k",
+      "source": "Gao et al. 2022, Figure 3K",
+      "source_url": "https://doi.org/10.1016/j.jbc.2022.101563",
+      "source_observable": "Approximate APOBEC3B abundance fold, FB23-2/DMSO",
+      "source_denominator": "DMSO condition in the same panel",
+      "source_exposure": "The panel does not specify arsenic exposure. The model comparison assumes an unexposed baseline.",
+      "source_intervention": "10 micromolar FB23-2",
+      "source_time": "12 experimental hours",
+      "model_observable": "A3B in E=0 FTO-inhibition diagnostic divided by E=0 model control",
+      "status": "descriptive_comparison_protocol_and_time_not_calibrated",
+      "quantitative_fit_eligible": false,
+      "required_before_fitting": "Verify exposure background, estimate the effective activity multiplier for this dose, map experimental time, and allow an observation model capable of the measured dynamic range."
+    },
+    {
+      "id": "gao_a3b_decay_3e",
+      "source": "Gao et al. 2022, Figure 3E (approximately 3.3-fold from digitised chase curves)",
+      "source_url": "https://doi.org/10.1016/j.jbc.2022.101563",
+      "source_observable": "APOBEC3B actinomycin-D chase decay response after FTO knockdown",
+      "source_denominator": "Matched control-siRNA decay estimate",
+      "source_exposure": "Arsenic is not specified for this panel",
+      "source_time": "Experimental chase hours",
+      "model_observable": "d_a3b * (1 + gam_d2 * M_a3b)",
+      "status": "direction_informs_structure_magnitude_not_calibrated",
+      "quantitative_fit_eligible": false,
+      "required_before_fitting": "Original chase data and uncertainty, matched background and perturbation, and a compatible occupancy-response model. Default maximum unexposed decay ratio is 2.444, below 3.3."
+    },
+    {
+      "id": "zhao_writer_antioxidants",
+      "source": "Zhao et al. 2024, antioxidant transcript chases",
+      "source_url": "https://doi.org/10.1016/j.jhazmat.2023.133329",
+      "source_observable": "Decay estimates for SOD1, SOD2, CAT, TXN and GPX1, preserving gene, stage, siRNA and replicate",
+      "source_denominator": "Same gene and stage siControl decay estimate",
+      "source_exposure": "8w, 22w and 22+12w experimental stages, reported separately",
+      "source_time": "Experimental chase hours within each exposure stage",
+      "model_observable": "Decay of one writer-associated antioxidant aggregate",
+      "status": "stagewise_descriptive_structural_support",
+      "quantitative_fit_eligible": false,
+      "required_before_fitting": "A justified aggregate observation function, original replicate design, stage-specific intervention effects and experimental-to-model time mapping. Genes are not interchangeable biological replicates."
+    },
+    {
+      "id": "zhao_prdx5",
+      "source": "Zhao et al. 2024, PRDX5/FTO/YTHDF2 branch",
+      "source_url": "https://doi.org/10.1016/j.jhazmat.2023.133329",
+      "source_observable": "PRDX5 decay estimates by stage and siRNA",
+      "source_denominator": "Same stage siControl decay estimate",
+      "source_exposure": "Source exposure stages, reported separately",
+      "source_time": "Experimental chase hours",
+      "model_observable": null,
+      "status": "separate_reader_mechanism_not_represented",
+      "quantitative_fit_eligible": false,
+      "required_before_fitting": "A separate PRDX5 state with the appropriate reader sign and data-supported contribution to antioxidant capacity."
+    },
+    {
+      "id": "ddb2_ner_proxy",
+      "source": "Cui et al. 2021 GSE145923 and Yang et al. 2021 GSE145924, including published METTL14-DDB2-YTHDF1 functional experiments",
+      "source_url": "https://doi.org/10.1073/pnas.2025948118",
+      "source_observable": "First-three-exon IP/input contrast relative to background transcripts, with independent functional repair evidence from the source study",
+      "source_denominator": "Same feature in the matched control, with normalisation to the background median",
+      "source_exposure": "Arsenic and METTL14 perturbation are distinct source protocols",
+      "source_time": "Experimental protocols with uncalibrated model time",
+      "model_observable": "M_rep occupancy and Q, a DDB2/NER translation proxy",
+      "status": "descriptive_feature_comparison_and_indirect_structural_support",
+      "quantitative_fit_eligible": false,
+      "required_before_fitting": "Justify enrichment-to-occupancy mapping, METTL14 versus simulated METTL3 intervention mapping and any transfer to aggregate lesion repair. Cross-transcript bounds are not replicate confidence intervals or equivalence tests."
+    },
+    {
+      "id": "cui_nedd4l_pathway_rescue",
+      "source": "Cui et al. 2021, Figure 4",
+      "source_url": "https://doi.org/10.1038/s41467-021-22469-6",
+      "source_observable": "NEDD4L knockdown in FTO-deleted cells and downstream phenotype",
+      "source_denominator": "Matched source background within the factorial experiment",
+      "source_exposure": "Source protocol and FTO-deleted background",
+      "source_time": "Experimental endpoint with uncalibrated model time",
+      "model_observable": "Illustrative NEDD4L re-expression with FTO unchanged",
+      "status": "indirect_pathway_support_different_intervention",
+      "quantitative_fit_eligible": false,
+      "required_before_fitting": "Match the FTO-deleted background, NEDD4L knockdown and measured endpoint."
+    }
+  ]
+}

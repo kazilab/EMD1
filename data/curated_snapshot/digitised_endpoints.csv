@@ -1,0 +1,8 @@
+arm,paper,panel,quantity,condition,value,unit,read_method,p_value,reference_id,provenance_id
+APOBEC3B/KCC2,"Gao et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3K,"APOBEC3B mRNA level, FTO inhibition",DMSO,1.0,fold vs DMSO,"bar heights, y-axis 0-1.5",\N,gao2022,derived_digitised
+APOBEC3B/KCC2,"Gao et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3K,"APOBEC3B mRNA level, FTO inhibition",FB23-2,0.12,fold vs DMSO,"bar heights, y-axis 0-1.5",0.0233,gao2022,derived_digitised
+APOBEC3B/KCC2,"Gao et al., J Biol Chem 298:101563 (2022)  PMID 34998823",1G,mutation count by substitution type,Ctrl shRNA,2.0,max count across substitution types,"tallest bar per group, y-axis 0-10, integer counts",\N,gao2022,derived_digitised
+APOBEC3B/KCC2,"Gao et al., J Biol Chem 298:101563 (2022)  PMID 34998823",1G,mutation count by substitution type,Ctrl shRNA +As,8.0,max count across substitution types,"tallest bar per group, y-axis 0-10, integer counts",\N,gao2022,derived_digitised
+APOBEC3B/KCC2,"Gao et al., J Biol Chem 298:101563 (2022)  PMID 34998823",1G,mutation count by substitution type,A3B shRNA +As,3.0,max count across substitution types,"tallest bar per group, y-axis 0-10, integer counts",\N,gao2022,derived_digitised
+APOBEC3B/KCC2,"Gao et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3Q,"mutation count by substitution type, FTO inhibition",DMSO +As,9.0,max count across substitution types,"tallest bar per group, y-axis 0-10, integer counts",\N,gao2022,derived_digitised
+APOBEC3B/KCC2,"Gao et al., J Biol Chem 298:101563 (2022)  PMID 34998823",3Q,"mutation count by substitution type, FTO inhibition",FB23-2 +As,4.0,max count across substitution types,"tallest bar per group, y-axis 0-10, integer counts",\N,gao2022,derived_digitised

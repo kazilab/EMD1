@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "gene": "NEDD4L",
+  "transcript": "NM_001144966.3",
+  "publication_doi": "10.1038/s41467-021-22469-6",
+  "published_interval": "NC_000018.10:58221610-58221760",
+  "source_assembly": "hg38",
+  "target_assembly": "hg19",
+  "coordinate_convention": "0-based-half-open",
+  "verification_method": "ucsc_chain_and_refseq_first_exon",
+  "published_coordinate_interpretation": null,
+  "coordinate_interpretation_evidence": null,
+  "source_interval": {"chrom": "chr18", "start": null, "end": null},
+  "target_interval": {"chrom": "chr18", "start": null, "end": null},
+  "assembly_chain": {
+    "path": "raw/hg38ToHg19.over.chain.gz",
+    "sha256": null,
+    "source_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/liftOver/hg38ToHg19.over.chain.gz"
+  },
+  "target_refgene": {
+    "path": "raw/hg19_refGene.txt.gz",
+    "sha256": null,
+    "source_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg19/database/refGene.txt.gz"
+  }
+}

@@ -1,0 +1,5 @@
+# Offline simulation, SQLite evidence audit and figure generation.
+numpy>=2.0
+scipy>=1.13
+matplotlib>=3.8
+pandas>=2.0

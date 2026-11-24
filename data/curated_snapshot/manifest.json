@@ -1,0 +1,347 @@
+{
+  "schema_version": 1,
+  "origin": "export_of_supplied_curated_sqlite",
+  "independent_raw_reextraction": false,
+  "source_database_sha256": "7c80d2179df0d256c080b98937bf2961fa1780b52b8664d4e6dd8d49199e4a4d",
+  "source_status_sha256": "7c0cfde5d254d471083fb8ed0095a51e497e0b7236c998cbdf47c9b64f39194b",
+  "null_token": "\\N",
+  "notes": "CSV exports of the curated database. The source database checksum identifies the origin of the 177 measurement rows.",
+  "schema": {
+    "path": "schema.sql",
+    "sha256": "ddd9d0050be99a80be7fbe5137dc97764aa8dbb55a462d33220df2e461a240fd"
+  },
+  "tables": [
+    {
+      "name": "metadata",
+      "path": "metadata.csv",
+      "columns": [
+        {
+          "name": "key",
+          "type": "TEXT"
+        },
+        {
+          "name": "value",
+          "type": "TEXT"
+        }
+      ],
+      "rows": 17,
+      "sha256": "662d458787df89acb758c4f24b4fddbfbf4ec662b3e26d385eef2ec1ec378c79"
+    },
+    {
+      "name": "references",
+      "path": "references.csv",
+      "columns": [
+        {
+          "name": "reference_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "citation",
+          "type": "TEXT"
+        },
+        {
+          "name": "title",
+          "type": "TEXT"
+        },
+        {
+          "name": "doi",
+          "type": "TEXT"
+        },
+        {
+          "name": "pmid",
+          "type": "TEXT"
+        },
+        {
+          "name": "url",
+          "type": "TEXT"
+        },
+        {
+          "name": "notes",
+          "type": "TEXT"
+        }
+      ],
+      "rows": 6,
+      "sha256": "a4585b81252e90c7f6977c994866ea9ac496bbc33b14ddcb7b4faeb68e708b6a"
+    },
+    {
+      "name": "provenance",
+      "path": "provenance.csv",
+      "columns": [
+        {
+          "name": "artifact_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "source_path",
+          "type": "TEXT"
+        },
+        {
+          "name": "sha256",
+          "type": "TEXT"
+        },
+        {
+          "name": "url",
+          "type": "TEXT"
+        },
+        {
+          "name": "archive_member",
+          "type": "TEXT"
+        },
+        {
+          "name": "automatic",
+          "type": "INTEGER"
+        },
+        {
+          "name": "reference_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "role",
+          "type": "TEXT"
+        },
+        {
+          "name": "transformation_notes",
+          "type": "TEXT"
+        }
+      ],
+      "rows": 33,
+      "sha256": "0decb41eadfc7daa8828fe416f17ad886c350b390e98aea8835814da71e69f0e"
+    },
+    {
+      "name": "chase_decay_constants",
+      "path": "chase_decay_constants.csv",
+      "columns": [
+        {
+          "name": "gene",
+          "type": "TEXT"
+        },
+        {
+          "name": "stage",
+          "type": "TEXT"
+        },
+        {
+          "name": "sirna",
+          "type": "TEXT"
+        },
+        {
+          "name": "rep",
+          "type": "INTEGER"
+        },
+        {
+          "name": "k",
+          "type": "REAL"
+        },
+        {
+          "name": "half_life",
+          "type": "REAL"
+        },
+        {
+          "name": "reference_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "provenance_id",
+          "type": "TEXT"
+        }
+      ],
+      "rows": 162,
+      "sha256": "686f05e632ae68e3f43ecb91ffdb30e8a28544bce33aa535d0efc13100b22c01"
+    },
+    {
+      "name": "digitised_endpoints",
+      "path": "digitised_endpoints.csv",
+      "columns": [
+        {
+          "name": "arm",
+          "type": "TEXT"
+        },
+        {
+          "name": "paper",
+          "type": "TEXT"
+        },
+        {
+          "name": "panel",
+          "type": "TEXT"
+        },
+        {
+          "name": "quantity",
+          "type": "TEXT"
+        },
+        {
+          "name": "condition",
+          "type": "TEXT"
+        },
+        {
+          "name": "value",
+          "type": "REAL"
+        },
+        {
+          "name": "unit",
+          "type": "TEXT"
+        },
+        {
+          "name": "read_method",
+          "type": "TEXT"
+        },
+        {
+          "name": "p_value",
+          "type": "REAL"
+        },
+        {
+          "name": "reference_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "provenance_id",
+          "type": "TEXT"
+        }
+      ],
+      "rows": 7,
+      "sha256": "cedefd1fff8b013a167ec6036ab95049af9f2d5f79b61b79013e16518aa1a5a5"
+    },
+    {
+      "name": "repair_edge_summary",
+      "path": "repair_edge_summary.csv",
+      "columns": [
+        {
+          "name": "series",
+          "type": "TEXT"
+        },
+        {
+          "name": "contrast",
+          "type": "TEXT"
+        },
+        {
+          "name": "gene",
+          "type": "TEXT"
+        },
+        {
+          "name": "pooled_raw_ratio",
+          "type": "REAL"
+        },
+        {
+          "name": "background_raw_median",
+          "type": "REAL"
+        },
+        {
+          "name": "effect",
+          "type": "REAL"
+        },
+        {
+          "name": "effect_definition",
+          "type": "TEXT"
+        },
+        {
+          "name": "pct",
+          "type": "REAL"
+        },
+        {
+          "name": "null_lo",
+          "type": "REAL"
+        },
+        {
+          "name": "null_hi",
+          "type": "REAL"
+        },
+        {
+          "name": "module",
+          "type": "REAL"
+        },
+        {
+          "name": "n_background_drawn",
+          "type": "INTEGER"
+        },
+        {
+          "name": "n_background_used",
+          "type": "INTEGER"
+        },
+        {
+          "name": "n_repair",
+          "type": "INTEGER"
+        },
+        {
+          "name": "accession",
+          "type": "TEXT"
+        },
+        {
+          "name": "chrom",
+          "type": "TEXT"
+        },
+        {
+          "name": "strand",
+          "type": "TEXT"
+        },
+        {
+          "name": "region_bounding_start_0based",
+          "type": "INTEGER"
+        },
+        {
+          "name": "region_bounding_end_0based",
+          "type": "INTEGER"
+        },
+        {
+          "name": "exon_intervals_0based",
+          "type": "TEXT"
+        },
+        {
+          "name": "region_exon_nt",
+          "type": "INTEGER"
+        },
+        {
+          "name": "input_qc_bin_nt",
+          "type": "INTEGER"
+        },
+        {
+          "name": "min_control_input_bins",
+          "type": "INTEGER"
+        },
+        {
+          "name": "min_control_input_density",
+          "type": "REAL"
+        },
+        {
+          "name": "control_input_passing_bins_min",
+          "type": "INTEGER"
+        },
+        {
+          "name": "control_input_mean_density_min",
+          "type": "REAL"
+        },
+        {
+          "name": "index_raw_ratio_rep1",
+          "type": "REAL"
+        },
+        {
+          "name": "index_background_normalized_ratio_rep1",
+          "type": "REAL"
+        },
+        {
+          "name": "index_ratio_rep1",
+          "type": "REAL"
+        },
+        {
+          "name": "index_raw_ratio_rep2",
+          "type": "REAL"
+        },
+        {
+          "name": "index_background_normalized_ratio_rep2",
+          "type": "REAL"
+        },
+        {
+          "name": "index_ratio_rep2",
+          "type": "REAL"
+        },
+        {
+          "name": "reference_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "provenance_id",
+          "type": "TEXT"
+        }
+      ],
+      "rows": 8,
+      "sha256": "0b011c68c7da6675dcc1b1fe3ba9358622a87fe9bb1b84f2fcb2482c5d382340"
+    }
+  ]
+}

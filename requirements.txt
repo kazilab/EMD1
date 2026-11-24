@@ -1,0 +1,4 @@
+-r src/emd1_simulation/requirements.txt
+jupyterlab>=4.0
+ipykernel>=6.29
+nbclient>=0.10

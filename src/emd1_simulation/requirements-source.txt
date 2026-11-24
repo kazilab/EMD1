@@ -1,0 +1,4 @@
+# Processing coverage tracks and source workbooks.
+-r requirements.txt
+pyBigWig>=0.3.22
+openpyxl>=3.1
